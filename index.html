@@ -7,7 +7,67 @@
 	<title>My portfolio</title>
 	<link rel="stylesheet" type="text/css" href="project.css">
 	<!-- <script src="https://kit.fontawesome.com/313af4f779.js" crossorigin="anonymous"></script> -->
-	
+	<style>
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 90%;
+  }
+
+  .card {
+    width: calc(33.33% - 20px);
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    height: 100%; /* Added */
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .description {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    flex-grow: 1; /* Added */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    background-color: #ffffff;
+    color: black;
+    padding: 2% 5%;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    width: 48%;
+    text-align: center;
+  }
+
+  .button:hover {
+    background-color: #333333;
+    color: white;
+  }
+</style>
 </head>
 <!-- <p style="background-image: url('photos/Background.jpg');"> 
  -->
@@ -66,7 +126,17 @@
 				<img src="photos/ownphoto.jpg">
 			</div>
 			<div id="about-para">
-				<p>Myself Prashant Kumar currently in <span class="text-highlight">3rd year</span> of Btech from <span class="text-highlight">NIT Patna</span> majoring in <span class="text-highlight">Computer Science</span>. Coming from computer science naturally, I am Coding Enthusiast who wants to impact day-to-day life of person with my code and I see myself working towards betterment of society with whatever knowledge and skill I can put into use. My hobbies include hitting Gym and Playing cricket and reciting Poetry.
+				<!-- <p>Myself Prashant Kumar currently in <span class="text-highlight">4th year</span> of Btech from <span class="text-highlight">NIT Patna</span> majoring in <span class="text-highlight">Computer Science</span>. Coming from computer science naturally, I am Coding Enthusiast who wants to impact day-to-day life of person with my code and I see myself working towards 
+					betterment of society with whatever knowledge and skill I can put into use. My hobbies include hitting Gym and Playing cricket and reciting Poetry.
+				</p> -->
+				<p>
+					I am Prashant Kumar, a passionate <span class="text-highlight">fourth-year Computer Science</span>  major at NIT Patna. With a burning desire to wield the power of code, I envision a future where my programming prowess touches and transforms the lives of individuals every single day. My journey as a Coding Enthusiast has been fueled by an unwavering determination to harness technology for the betterment of society. Armed with the knowledge and skills I've cultivated, I am on a mission to engineer meaningful change that leaves a lasting impact.
+<br>
+<br>
+Beyond the realm of algorithms and data structures, I find solace in the weight of iron at the gym and the thrill of the cricket field. As I navigate through lines of code, I also weave intricate verses of poetry, each word a reflection of my soul's rhythm. This unique blend of passions fuels my drive, propelling me forward in my quest to shape a brighter, more harmonious world.
+<br>
+<br>
+In the grand symphony of life, I am the composer of innovation, the conductor of progress, and the poet of purpose. With code as my instrument and society as my stage, I am ready to create a masterpiece that resonates through time.
 				</p>
 			</div>
 		</section>
@@ -126,7 +196,7 @@
 				<div class="skill-progress">
 					<div class="eighty-percent mb-light-purple">
 						<div class="skill-name">
-							<img src="favicon/database.png"><span>DBMS</span>
+							<img src="favicon/database.png"><span>Mysql/DBMS</span>
 						</div>
 					</div>
 				</div>
@@ -138,13 +208,41 @@
 					</div>
 				</div>
 				<div class="skill-progress">
-					<div class="eighty-percent mb-light-blue">
+					<div class="sixty-percent mb-light-blue">
 						<div class="skill-name">
 							<img src="favicon/dapps.png"><span>DAPPS</span>
 						</div>
 					</div>
 				</div>
-
+				
+				<div class="skill-progress">
+					<div class="eighty-percent mb-light-green">
+						<div class="skill-name">
+							<img src="favicon/mern.png"><span>Mern Stack</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill-progress">
+					<div class="eighty-percent mb-light-black">
+						<div class="skill-name">
+							<img src="favicon/js.png"><span>Javascript</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill-progress">
+					<div class="sixty-percent mb-light-pink">
+						<div class="skill-name">
+							<img src="favicon/java.png"><span>Java</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill-progress">
+					<div class="fifty-percent mb-orange">
+						<div class="skill-name">
+							<img src="favicon/blockchain.png"><span>Django</span>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</section>
@@ -232,13 +330,15 @@
 							<img src="photos/Nitlogo.png">
 						</div>
 						<h3 class="experience-designation m0 m-blue">
-						Cse 3rd Year UnderGrad</h3>
+						Cse 4th Year UnderGrad</h3>
 						<h4 class="experience-company-name">
 							National Institute Of Technology, Patna
 						</h4>
 						<h5 class="experience-duration m0"> Dec 2020 - July 2024 </h5>
 
 						<p class="experience-description text-align-justify"> 
+							<span>CGPA : 8.14 </span>
+							<br>
 							Started my studies in 2020 in Btech Program and going to get Graduation Degree in 2024 with major in Computer Science. Beside courses, learned several skills like Leadership, Team Management.
 						</p>
                     </div>
@@ -253,6 +353,7 @@
                         <h4 class="experience-company-name "> British English School </h4>
                         <h5 class="experience-duration m0"> April 15 - Feb 2020 </h5>
                         <p class="experience-description text-align-justify"> 
+							
                         	Started my schooling from class 7 and completed my Secondary education in 2018 with 92% and then in 2020 got my result in Higher Secondary with 88.8% percent from CBSE board.
                         </p>
                     </div>
@@ -293,12 +394,12 @@
 				<span> Porfolio </span>
 			</h1>
 
-			<div id="portfolio-container">
+			<!-- <div id="portfolio-container">
 
 				<div class="portfolio-image-container photos_crop">
 					<img src="photos/bus.jpeg">
 					<div class="portfolio-details">
-						<p>In this project we have simply use CPP and data structures to built a bus reservation system where one can book, cancel tickets.
+						<p>User can interact with each other in various ways, such as sharing their creative ideas, commenting on and liking other’s photos, and engaging in real-time chat.
 						</p>
 					</div>
 
@@ -308,7 +409,7 @@
                     <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
                     <div class="portfolio-details">
                         <p>
-                            In Progress
+                            A live chat application that allows one-to-one communication.
                         </p>
                     </div>
 
@@ -317,12 +418,56 @@
                     <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000028_1550237365_tree.jpeg">
                     <div class="portfolio-details">
                         <p>
-                            Currently Working
+                            A model that can detect hate speech and classify the statement as hateful or not.
                         </p>
                     </div>
                 </div>
 
+			</div> -->
+			<div class="card-container">
+			<div class="card">
+				<div class="description">
+				<h3>Social Media Blog</h3>
+				<p>One can post his views, comment and like on each others post also can talk in realtime</p>
+				<div class="button-container">
+					<a href="#" class="button">Live Demo</a>
+					<a href="https://github.com/Prashantkmr389/facebook" class="button">Source Code</a>
+				</div>
+				</div>
 			</div>
+			<div class="card">
+				<div class="description">
+				<h3>chatty</h3>
+				<p>A Realtime One to one chatting app where you can interact with others privately</p>
+				<div class="button-container">
+					<a href="#" class="button">Live Demo</a>
+					<a href="https://github.com/Prashantkmr389/chatty/tree/master" class="button">Source Code</a>
+				</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="description">
+				<h3>Hate Speech Detection</h3>
+				<p>A python model to detect whether given speech is hate or not</p>
+				<div class="button-container">
+					<a href="#" class="button">Live Demo</a>
+					<a href="https://github.com/Prashantkmr389/hate-speech-detection" class="button">Source Code</a>
+				</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="description">
+				<h3>To do list</h3>
+				<p>One can add and remove task which will be saved in database</p>
+				<div class="button-container">
+					<a href="#" class="button">Live Demo</a>
+					<a href="https://github.com/Prashantkmr389/todolist" class="button">Source Code</a>
+				</div>
+				</div>
+			</div>
+			<!-- Add more cards as needed -->
+			</div>
+
 
 		</section>
 
