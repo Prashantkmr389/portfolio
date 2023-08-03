@@ -458,6 +458,8 @@ button:focus{
 }
 
 
+
+
 .text-highlight {
     color: #2857a4;
     font-weight: 600;
@@ -504,6 +506,9 @@ button:focus{
 .mb-light-pink{
 	background-color: orangered;
 }
+
+
+
 /*percentage class */
 
 .eighty-percent{
@@ -516,6 +521,8 @@ button:focus{
 	height: inherit;
 	width: 85%;
 }
+
+
 .seventyfive-percent{
 	height: inherit;
 	width: 75%;
@@ -531,12 +538,26 @@ button:focus{
 	width: 60%;
 }
 
-
 .ninty-percent{
 	height: inherit;
 	width: 90%;
 }
-
+.nintyfive-percent{
+	height: inherit;
+	width: 95%;
+}
+.fifty-percent{
+	height: inherit;
+	width: 50%;
+}
+.forty-percent{
+	height: inherit;
+	width: 40%;
+}
+.thirty-percent{
+	height: inherit;
+	width: 30%;
+}
 /*
 .photos_crop{
 	height: 100%;
