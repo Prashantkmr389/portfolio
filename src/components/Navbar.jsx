@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { GithubLogo , LinkedinLogo} from "@phosphor-icons/react/dist/ssr";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -42,10 +43,17 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain rounded-lg" />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-9 h-9 object-contain rounded-lg"
+          />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Prashant &nbsp;
-            <span className="sm:block hidden"> | Developer Portfolio</span>
+            <span className="grid grid-flow-col gap-2">
+              | <GithubLogo size={32} weight="fill" />
+              <LinkedinLogo size={32} color="#8080ff" />
+            </span>
           </p>
         </Link>
 

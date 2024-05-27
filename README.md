@@ -26,5 +26,5 @@ Welcome to my portfolio! This website showcases my skills, projects, and experie
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/aryan-139/portfolio.git
+   git clone https://github.com/prashantkmr389/portfolio.git
     ```
