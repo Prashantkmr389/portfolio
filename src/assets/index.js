@@ -21,15 +21,14 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import deepsight from "./deepsight.jpeg";
-import zipy from "./zipy.jpeg";
-import prowess from "./prowess.jpeg";
-import tesla from "./company/tesla.png";
-import bit from "./bit.png";
+import ff from "./ff.png";
+import vestipy_temp from "./vestipy_temp.png"
 
-import wealthbridge from "./wealthbridge.png";
-import library from "./library.png";
-import bytebit from "./bytebit.png";
+import nitplogo from "./nitplogo.png"
+
+import facebook from "./facebook.png"
+import chatty from "./snappy.png"
+import hatespeechdetection from "./hatespeechdetection.png"
 
 export {
   logo,
@@ -53,11 +52,11 @@ export {
   tailwind,
   typescript,
   threejs,
-  wealthbridge,
-  library,
-  bytebit,
-  deepsight,
-  zipy,
-  prowess,
-  bit,
+
+  ff,
+  vestipy_temp,
+  nitplogo,
+  hatespeechdetection,
+  chatty,
+  facebook,
 };

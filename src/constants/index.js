@@ -1,5 +1,5 @@
+import { ChartDonut } from "@phosphor-icons/react";
 import {
-    mobile,
     backend,
     creator,
     web,
@@ -13,15 +13,12 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
-    deepsight,
-    zipy,
-    prowess,
-    wealthbridge,
-    library,
-    bytebit,
-    bit,
+    ff,
+    facebook,
+    chatty,
+    hatespeechdetection,
+    vestipy_temp,
+    nitplogo,
   } from "../assets";
   
   export const navLinks = [
@@ -115,51 +112,38 @@ import {
   
   const experiences = [
     {
-      title: "Software Engineer Intern",
-      company_name: "Deepsight AI Labs",
-      icon: deepsight,
+      title: "Market Analyst Intern",
+      company_name: "Futures First",
+      icon: ff,
       iconBg: "#383E56",
-      date: "July 2023 - August 2023",
+      date: "Jan 2022 - Jun 2024",
       points: [
-       "Proposed the architecture, and implemented an end-to-end project of a sophisticated Visitor Management Solution with Facial Recognition based check-in, and checkout system.",
-       "This impacted the organisation to have 34% faster registrations and reduced manual errors by 70%, benchmarked against the previous system.",
-       "Designed and executed the entire frontend of the Administrative Dashboard, strategically incorporating Key Performance Indicators (KPIs) for data-driven insights and actionable decision-making.",
-       "Proficiently diagnosed and fixed bugs and critical memory leaks in the existing software at priority, significantly boosting performance by 800% ",
+        "Traded US Short Term Interest Rate Futures contract in live market",
+        "Learnt about biggest financial hub and market",
+        "Learnt how microeconomics and macroeconomics impacts various market",
       ],
     },
     {
-      title: "Technical Content Engineer Intern",
-      company_name: "Zipy.ai",
-      icon: zipy,
+      title: "Founder and Ceo",
+      company_name: "Vestipy",
+      icon: vestipy_temp,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Apr 2023",
+      date: "Mar 2024 - Currently",
       points: [
-        "Worked on the technical documentation for the software , including API reference and troubleshooting guides.",
-        "Wrote and published 9 technical articles on the company blog, which had over 30,000 hits.",
-        "Skills and Tools used: React, JavaScript, Node.js, Express.js, Javascript Frameworks, Error-Monitoring",
+        "Materializing idea into reality",
+        "Working on Backend as well as Frontend development from scractch",
+        "Skills and Tools used: React, JavaScript, FastApi, Python, Javascript Frameworks, PostgressSQL",
       ],
     },
     {
-      title: "Software Development Engineer Intern",
-      company_name: "Prowess",
-      icon: prowess,
-      iconBg: "#383E56",
-      date: "July 2022 - Aug 2022",
-      points: [
-        "Built a Resume Parser System in the profile-building section, which dynamically auto-populates the fields after parsing the media through the JSON response from the API.",
-        "Integrated a Stripe payment gateway to the platform for users wanting to upgrade their plan, and for employers.",
-        "Worked with a fully remote team which were spread out in different time zones.",
-      ],
-    },
-    {
-      title: "MS. Mathematics and Computing",
-      company_name: "Birla Institute of Technology",
-      icon: bit,
+      title: "Computer Science and Engineering",
+      company_name: "National Institute of Technology Patna",
+      icon: nitplogo,
       iconBg: "#E6DEDD",
-      date: "May 2019 - Present",
+      date: "Nov 2020 - May 2024",
       points: [
-       "President, Rotaract Club of BIT Mesra- Spearheaded a team of 170 members for the institute's socio-cultural chapter, Rotaract Club." ,
-       "Editor-in-Chief, News and Publications Society- Took interviews of imminent personalities, and wrote multiple editorials and articles to college newspaper. Interfaced with the college administration and the media houses to get the newspaper published." 
+        "Pr Co-Coordinator, Incubation Centre NIT Patna - Spearheaded the successful activities at Incubation Centre NIT Patna.",
+        "Discipline Lead, HackSlash NIT Patna -Demonstrated exceptional leadership skills as the Discipline Lead for Hackslash",
       ],
     },
   ];
@@ -193,12 +177,12 @@ import {
   
   const projects = [
     {
-      name: "Wealthbridge",
+      name: "Social Media",
       description:
-        "Developed a full-stack finance dashboard with Machine Learning predictions and forecasting abilities using the MERN stack (MongoDB, Express, React, Node). Developed the backend using Node.js and Express.js as the framework, and used MongoDB to store all the        financial and user-specific data.",
+        "Developed a basic version of facebook app where users can interact with each other",
       tags: [
         {
-          name: "typescript",
+          name: "Javascript",
           color: "blue-text-gradient",
         },
         {
@@ -206,66 +190,46 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "material ui",
+          name: "React Js",
           color: "pink-text-gradient",
         },
       ],
-      image: wealthbridge,
-      source_code_link: "https://github.com/aryan-139/wealthbridge",
+      image: facebook,
+      source_code_link: "https://github.com/prashantkmr389/facebook",
     },
     {
-      name: "LibraryPlus",
-      description:
-        "LibraryPlus is a Library Management System, which aims to fix the efficiency and organization issues faced by libraries. It is an admin based web application, which allows the admin to manage the library, and the users to access the library. One can issue books, return books, search for books, and view the library catalog.",
+      name: "Chatty",
+      description: "RealTime messaging app with clear user inteface in React.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "FastAPI",
-          color: "green-text-gradient",
-        },
-        {
-          name: "MySQL",
+          name: "MongoDB",
           color: "pink-text-gradient",
         },
+      ],
+      image: chatty,
+      source_code_link: "https://github.com/prashantkmr389/chatty",
+    },
+    {
+      name: "Hate Speech Detection",
+      description:
+        "A Machine Learnig application where it will detect whether given text is hate speech or not",
+      tags: [
         {
           name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "Material UI",
-          color: "green-text-gradient",
-        }
-      ],
-      image: library,
-      source_code_link: "https://github.com/aryan-139/Libraryplus",
-    },
-    {
-      name: "ByteBit",
-      description:
-        "The Huffman Coding Compression System is a software tool that utilizes the Huffman coding algorithm to compress and decompress files. Huffman coding is a popular lossless data compression algorithm that assigns variable-length codes to different characters based on their frequencies in the input file.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "express",
+          name: "Machine Learning",
           color: "green-text-gradient",
         },
-        {
-          name: "material ui",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "multer",
-          color: "blue-text-gradient",
-        }
       ],
-      image: bytebit,
-      source_code_link: "https://github.com/aryan-139/bytebit",
+      image: hatespeechdetection,
+      source_code_link:
+        "https://github.com/Prashantkmr389/hate-speech-detection",
     },
   ];
   

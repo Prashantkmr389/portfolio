@@ -35,27 +35,35 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img
-            src={logo}
-            alt="logo"
-            className="w-9 h-9 object-contain rounded-lg"
-          />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Prashant &nbsp;
-            <span className="grid grid-flow-col gap-2">
-              | <GithubLogo size={32} weight="fill" />
-              <LinkedinLogo size={32} color="#8080ff" />
+        <div className="flex gap-2">
+          <Link
+            to="/"
+            className="flex items-center"
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
+          >
+            <img
+              src={logo}
+              alt="logo"
+              className="w-12 h-12 object-contain rounded-lg"
+            />
+          </Link>
+          <div className="">
+            <p className="text-[18px] font-bold cursor-pointer flex text-red-200">
+              Prashant
+            </p>
+            <span className="flex">
+              <a href="https://github.com/Prashantkmr389">
+                <GithubLogo size={32} weight="fill" color="#ed3d6f" />
+              </a>
+              <a href="https://www.linkedin.com/in/prashantkmr389/">
+                <LinkedinLogo size={32} color="#ed3d6f" />
+              </a>
             </span>
-          </p>
-        </Link>
+          </div>
+        </div>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
