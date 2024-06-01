@@ -124,7 +124,7 @@ import {
       ],
     },
     {
-      title: "Founder and Ceo",
+      title: "Building",
       company_name: "Vestipy",
       icon: vestipy_temp,
       iconBg: "#E6DEDD",
