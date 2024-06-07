@@ -1,7 +1,10 @@
 import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+
+import AnimatedCursor from "react-animated-cursor";
 import { ToastContainer } from "react-toastify";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -32,6 +35,20 @@ const App = () => {
           theme="dark"
         />
       </div>
+      <AnimatedCursor
+        innerSize={10}
+        outerSize={25}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: "#b3b3bb",
+        }}
+        outerStyle={{
+          border: "3px solid #b3b3bb",
+        }}
+      />
     </BrowserRouter>
   );
 }
