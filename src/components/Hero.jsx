@@ -9,7 +9,7 @@ const scaleAnimation = {
   animate: { scale: 1, opacity: 1, transition: { duration: 0.3 } },
 };
 
-const Hero = () => {
+const Hero = ({theme, setTheme}) => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div

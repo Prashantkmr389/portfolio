@@ -5,6 +5,7 @@ import React from "react";
 import { styles } from "../styles";
 // import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
+import FeelingProud from "./greeting/FeelingProud";
 // import { fadeIn, textVariant } from "../utils/motion";
 
 // const ServiceCard = ({ index, title, icon }) => (
@@ -76,34 +77,46 @@ import { SectionWrapper } from "../hoc";
 // };
 
 
-const AboutWithout = () => {
+const About = (props) => {
+  const {theme, setTheme} = props
+  // console.log(props.theme, props.setTheme)
   return (
     <>
-      <div>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </div>
+      <div className="flex flex-row">
+        <div>
+          <div>
+            <p className={styles.sectionSubText}>Introduction</p>
+            <h2 className={styles.sectionHeadText}>Overview.</h2>
+          </div>
 
-      <div
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        If you've found your way to this page, you're probably trying to get to
-        know more about me. First things first:{" "}
-        <code>tabs&gt;&gt;&gt;spaces.</code>
-        <br />
-        <br />
-        I'm a tech enthusiast; broadly interested in full-stack web development
-        mainly in Fintech Space. I am currently working on a StartUp and trying
-        hands on Finance. I read poetry in my spare time. I characterize myself
-        as a tech guy who wants to get better at everything.
-        <br />
-        <br />I love conversations about technology, businesses, and startups.
-        I'm into fitness, and I am in love with Comedy series ("Friends" is
-        G.O.A.T) and Coffe.
-      </div>
+          <div
+            className={`mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] ${
+              theme.name === "dark" ? "bg-slate-600" : "bg-slate-100"
+            } `}
+          >
+            If you've found your way to this page, you're probably trying to get
+            to know more about me. First things first:{" "}
+            <code>tabs&gt;&gt;&gt;spaces.</code>
+            <br />
+            <br />
+            I'm a tech enthusiast; broadly interested in full-stack web
+            development mainly in Fintech Space. I am currently working on a
+            StartUp and trying hands on Finance. I read poetry in my spare time.
+            I characterize myself as a tech guy who wants to get better at
+            everything.
+            <br />
+            <br />I love conversations about technology, businesses, and
+            startups. I'm into fitness, and I am in love with Comedy series
+            ("Friends" is G.O.A.T) and Coffe.
+          </div>
 
-      <div className="mt-8">
-        <h7>Support me by buying me dinner.</h7>
+          <div className="mt-8">
+            <h7>Support me by buying me dinner.</h7>
+          </div>
+        </div>
+        <div>
+          <FeelingProud {...props} />
+        </div>
       </div>
 
       {/* <div className='mt-10 flex flex-wrap gap-10'>
@@ -115,6 +128,6 @@ const AboutWithout = () => {
   );
 };
 
-export default SectionWrapper(AboutWithout, "about");
+export default SectionWrapper(About, "about");
 
 

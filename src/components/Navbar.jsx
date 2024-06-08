@@ -5,8 +5,9 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 import { GithubLogo , LinkedinLogo} from "@phosphor-icons/react/dist/ssr";
+import { Moon , Sun} from "@phosphor-icons/react";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -25,6 +26,42 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+    const { theme, setTheme } = props;
+    const [currTheme, setCurrTheme] = useState(theme.name)
+
+
+  const changeTheme = ()=>{
+
+    if(currTheme === "light"){
+      setTheme("dark")
+      localStorage.setItem("theme", "dark")
+      setCurrTheme("dark")
+    }
+    else{
+      setTheme("light")
+      localStorage.setItem("theme", "light")
+      setCurrTheme("light")
+    }
+  }
+
+
+  const icon =
+    props.theme.name === "dark" ? (
+      <Moon
+        weight="fill"
+        size={35}
+        color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+      />
+    ) : (
+      <Sun
+        size={35}
+        weight="fill"
+        color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+      />
+    );
+
+
 
   return (
     <nav
@@ -66,6 +103,16 @@ const Navbar = () => {
         </div>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
+          <button
+            className={`cursor-pointer m-[-7px] p-[5px] rounded-full border-none flex items-center justify-center focus:outline-none transition-all duration-200 ease-in-out ${
+        theme.name === 'light'
+          ? 'bg-[#7CD1F7] hover:shadow-[0_3px_8px_#F7D774]'
+          : 'bg-[#292C3F] hover:shadow-[0_3px_8px_#646464]'
+      }`}
+            onClick={changeTheme}
+          >
+            {icon}
+          </button>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
