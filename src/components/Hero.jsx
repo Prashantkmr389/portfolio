@@ -32,13 +32,13 @@ const Hero = () => {
   </motion.h3>
   <motion.p variants={scaleAnimation} initial="initial" animate="animate" className={`${styles.heroSubText} mt-2 text-white-100`}>
     I have graduated in <u>Computer Science and Engineering</u>
-    <br />from National Institute of Technology Patna. I'm a <i>full-stack developer</i> and I love to build
+    <br />from National Institute of Technology Patna.<br/> I'm a <i>full-stack developer</i> and I love to build
     <br />reliable software that solves real-world problems! 
   </motion.p>
         </div>
       </div>
 
-      {/* <ComputersCanvas /> */}
+      
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
