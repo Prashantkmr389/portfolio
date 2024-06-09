@@ -114,8 +114,9 @@ const About = (props) => {
             <h7>Support me by buying me dinner.</h7>
           </div>
         </div>
-        <div>
+        <div className="p-10">
           <FeelingProud {...props} />
+          {/* Social Mededia Links */}
         </div>
       </div>
 

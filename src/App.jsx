@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { About, Contact, Experience, Hero, Navbar, Works, StarsCanvas } from "./components";
 
 import AnimatedCursor from "react-animated-cursor";
 import { ToastContainer } from "react-toastify";
@@ -24,7 +24,7 @@ const App = () => {
           </div>
           <About theme={themes[theme]} setTheme={setTheme} />
           <Experience theme={themes[theme]} setTheme={setTheme} />
-          <Tech theme={themes[theme]} setTheme={setTheme} />
+          {/* <Tech theme={themes[theme]} setTheme={setTheme} /> */}
           <Works theme={themes[theme]} setTheme={setTheme} />
           {/* FeedBack Section */}
           <div className="relative z-0">
