@@ -11,7 +11,14 @@ const scaleAnimation = {
 
 const Hero = ({theme, setTheme}) => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto`}
+    style={
+      {
+        color : theme.text,
+        
+      }
+    }
+    >
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >

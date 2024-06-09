@@ -3,6 +3,29 @@
   animation: eyeb 5s linear infinite;
 }
 
+
+/* FeelingProud.css */
+
+.feeling-proud {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .feeling-proud {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feeling-proud {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
 @keyframes eyeb {
   0% {
     transform: translateY(-10);
